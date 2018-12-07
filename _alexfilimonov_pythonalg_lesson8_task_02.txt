@@ -1,0 +1,36 @@
+﻿Task 2: Закодируйте любую строку из трех слов по алгоритму Хаффмана.
+
+veni, vidi, vici ="пришел, увидел, победил"
+= 16 symbols
+i - 5 times
+v - 3 times
+, - 2 times
+  - 2 times 
+e - 1 times
+n - 1 times
+d - 1 times
+c - 1 times
+            o
+          /  \
+         o    o
+        / \  / \
+       i  o  v  o
+         / \  /  \
+        ,  o " "  o
+          / \    / \   
+         e   n  d  c
+i - 00
+v - 10
+, - 010
+  - 110
+e - 0110
+n - 0111
+d - 1110
+c - 1111
+
+v  e    n    i  ,       v  i  d    i  ,       v  i  c    i = 
+10 0110 0111 00 010 110 10 00 1110 00 010 110 10 00 1111 00 =
+1001 1001 1100 0101 1010 0011 1000 0101 1010 0011 1100 = 44 bits 
+= less than 6 symbols if a symbol has 8 bits length.
+
+
